@@ -124,7 +124,7 @@ DEFAULT_TEST_CONFIG = {
 if "PYTEST_CURRENT_TEST" not in os.environ and "PYTEST_VERSION" not in os.environ:
     # NOT running under Pytest: Fetch from live source (replace with actual logic)
     print("Fetching configuration from live LitePolis...")
-    secret_key = get_config("LitePolis-middleware-example", "secret_key")
+    secret_key = get_config("litepolis_middleware_example", "secret_key")
 else:
     # Running under Pytest: Use default test values
     print("Running under Pytest. Using default test configuration.")

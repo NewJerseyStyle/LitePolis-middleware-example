@@ -38,10 +38,8 @@ class JWTAuth(AuthenticationBackend):
             if ("PYTEST_CURRENT_TEST" not in os.environ and
                 "PYTEST_VERSION" not in os.environ):
                 # Replace with actual service name and key
-                package_name = os.path.basename(
-                    os.path.dirname(
-                        os.path.dirname(__file__)
-                    )
+                package_name = os.path.dirname(
+                    os.path.dirname(__file__)
                 )
                 secret_key = get_config(package_name, "secret_key")
             else:
