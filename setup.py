@@ -9,7 +9,7 @@ with open('LICENSE') as f:
 
 setup(
     name='litepolis-middleware-example',                                   # Change
-    version="0.0.1",                                                       # Change
+    version="0.0.2",                                                       # Change
     description='The middleware module for LitePolis',                     # Change
     long_description=readme,
     long_description_content_type="text/markdown",
