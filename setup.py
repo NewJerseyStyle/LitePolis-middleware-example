@@ -18,5 +18,5 @@ setup(
     url='https://github.com/NewJerseyStyle/LitePolis-middleware-example',  # Change
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),
-    install_requires=['litepolis', 'sqlmodel'],
+    install_requires=['litepolis', 'PtJWT', 'litepolis-database-example'],
 )
